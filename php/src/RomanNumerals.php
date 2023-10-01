@@ -8,13 +8,21 @@ class RomanNumerals
     {
         $romanNumber = "";
 
-        if ($number === 8) return 'VIII';
-
-        if ($number === 6) return 'VI';
-
-        if ($number === 5) return 'V';
+        if ($number >= 5) {
+            $romanNumber = "V";
+            $number -= 5;
+        }
 
         if ($number === 4) return 'IV';
+
+        $romanNumber .= $this->concatenateI($number);
+
+        return $romanNumber;
+    }
+
+    public function concatenateI(int $number)
+    {
+        $romanNumber = "";
 
         for ($i = 0; $i < $number; $i++) {
             $romanNumber .= "I";
