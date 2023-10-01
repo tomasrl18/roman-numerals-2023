@@ -8,8 +8,9 @@ class RomanNumerals
     {
         $roman = "";
 
-        if ($number === 10) {
-            return 'X';
+        if ($number >= 10) {
+            $roman .= 'X';
+            $number -= 10;
         }
 
         if ($number >= 5) {
