@@ -18,6 +18,10 @@ class RomanNumerals
             return 'L';
         }
 
+        if ($number === 100) {
+            return 'C';
+        }
+
         return 'I';
     }
 }
