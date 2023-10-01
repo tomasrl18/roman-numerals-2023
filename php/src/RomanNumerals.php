@@ -6,38 +6,46 @@ class RomanNumerals
 {
     public function convertRomanNumeral(int $number): string
     {
-        if ($number === 2) {
-            return 'II';
+        $roman = "";
+
+        for ($i = 0; $i < $number; $i++) {
+            $roman .= "I";
         }
 
-        if ($number === 3) {
-            return 'III';
-        }
+        return $roman;
 
-        if ($number === 5) {
-            return 'V';
-        }
+//        if ($number === 2) {
+//            return 'II';
+//        }
+//
+//        if ($number === 3) {
+//            return 'III';
+//        }
 
-        if ($number === 10) {
-            return 'X';
-        }
+//        if ($number === 5) {
+//            return 'V';
+//        }
+//
+//        if ($number === 10) {
+//            return 'X';
+//        }
+//
+//        if ($number === 50) {
+//            return 'L';
+//        }
+//
+//        if ($number === 100) {
+//            return 'C';
+//        }
+//
+//        if ($number === 500) {
+//            return 'D';
+//        }
+//
+//        if ($number === 1000) {
+//            return 'M';
+//        }
 
-        if ($number === 50) {
-            return 'L';
-        }
-
-        if ($number === 100) {
-            return 'C';
-        }
-
-        if ($number === 500) {
-            return 'D';
-        }
-
-        if ($number === 1000) {
-            return 'M';
-        }
-
-        return 'I';
+        //return 'I';
     }
 }
