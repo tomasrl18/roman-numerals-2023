@@ -26,4 +26,14 @@ class MyClassTest extends TestCase
 
         self::assertEquals('V', $result);
     }
+
+    /** @test */
+    public function given_10_then_return_X(): void
+    {
+        $xxx = new RomanNumerals();
+
+        $result = $xxx->convertRomanNumeral(10);
+
+        self::assertEquals('X', $result);
+    }
 }
