@@ -4,8 +4,8 @@ namespace Kata;
 
 class RomanNumerals
 {
-    public function convertRomanNumeral(): bool
+    public function convertRomanNumeral(): string
     {
-        return true;
+        return 'I';
     }
 }

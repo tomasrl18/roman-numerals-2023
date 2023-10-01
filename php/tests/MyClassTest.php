@@ -8,12 +8,12 @@ use PHPUnit\Framework\TestCase;
 class MyClassTest extends TestCase
 {
     /** @test */
-    public function give_me_a_good_name_please(): void
+    public function given_1_then_return_I(): void
     {
         $xxx = new RomanNumerals();
 
-        $result = $xxx->convertRomanNumeral();
+        $result = $xxx->convertRomanNumeral(1);
 
-        self::assertEquals(true, $result);
+        self::assertEquals('I', $result);
     }
 }
