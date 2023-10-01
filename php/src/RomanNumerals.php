@@ -6,6 +6,10 @@ class RomanNumerals
 {
     public function convertRomanNumeral(int $number): string
     {
+        if ($number === 2) {
+            return 'II';
+        }
+
         if ($number === 5) {
             return 'V';
         }
