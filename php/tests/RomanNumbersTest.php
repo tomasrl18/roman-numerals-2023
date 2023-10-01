@@ -22,7 +22,7 @@ class RomanNumbersTest extends TestCase
             'given_14_then_return_XIV' => [14, 'XIV'],
             'given_15_then_return_XV' => [15, 'XV'],
             'given_18_then_return_XVIII' => [18, 'XVIII'],
-            'given_19_then_return_XIV' => [19, 'XIV'],
+            'given_19_then_return_XIX' => [19, 'XIX'],
         ];
     }
 

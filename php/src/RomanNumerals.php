@@ -13,7 +13,7 @@ class RomanNumerals
             $number -= 10;
         }
 
-        if ($number === 9) return 'IX';
+        if ($number === 9) return $romanNumber . 'IX';
 
         if ($number >= 5) {
             $romanNumber .= "V";
