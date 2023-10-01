@@ -8,6 +8,8 @@ class RomanNumerals
     {
         $romanNumber = "";
 
+        if ($number === 4) return 'IV';
+
         for ($i = 0; $i < $number; $i++) {
             $romanNumber .= "I";
         }
