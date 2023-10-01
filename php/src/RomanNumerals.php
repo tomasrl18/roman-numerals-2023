@@ -20,7 +20,7 @@ class RomanNumerals
             $number -= 5;
         }
 
-        if ($number === 4) return 'IV';
+        if ($number === 4) return $romanNumber . 'IV';
 
         $romanNumber .= $this->concatenateI($number);
 
