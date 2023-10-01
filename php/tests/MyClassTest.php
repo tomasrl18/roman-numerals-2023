@@ -7,33 +7,23 @@ use PHPUnit\Framework\TestCase;
 
 class MyClassTest extends TestCase
 {
-    /** @test */
-    public function given_1_then_return_I(): void
-    {
-        $xxx = new RomanNumerals();
-
-        $result = $xxx->convertRomanNumeral(1);
-
-        self::assertEquals('I', $result);
+    public function convertion() {
+        return [
+            'given_1_then_return_I' => [1, 'I'],
+            'given_5_then_return_V' => [5, 'V'],
+            'given_10_then_return_X' => [10, 'X'],
+        ];
     }
 
-    /** @test */
-    public function given_5_then_return_V(): void
+    /** @test
+     * @dataProvider convertion
+     */
+    public function given_a_number_then_return_its_equal_in_roman($number, $expected): void
     {
         $xxx = new RomanNumerals();
 
-        $result = $xxx->convertRomanNumeral(5);
+        $result = $xxx->convertRomanNumeral($number);
 
-        self::assertEquals('V', $result);
-    }
-
-    /** @test */
-    public function given_10_then_return_X(): void
-    {
-        $xxx = new RomanNumerals();
-
-        $result = $xxx->convertRomanNumeral(10);
-
-        self::assertEquals('X', $result);
+        self::assertEquals($expected, $result);
     }
 }
