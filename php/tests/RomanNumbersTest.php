@@ -11,7 +11,7 @@ class RomanNumbersTest extends TestCase
         return [
             'given_1_then_return_I' => [1, 'I'],
             'given_2_then_return_II' => [2, 'II'],
-            //'given_3_then_return_III' => [3, 'III']
+            'given_3_then_return_III' => [3, 'III']
         ];
     }
 
