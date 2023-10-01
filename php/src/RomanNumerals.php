@@ -10,6 +10,10 @@ class RomanNumerals
             return 'V';
         }
 
+        if ($number === 10) {
+            return 'X';
+        }
+
         return 'I';
     }
 }
