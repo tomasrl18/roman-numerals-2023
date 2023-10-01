@@ -26,6 +26,10 @@ class RomanNumerals
             return 'D';
         }
 
+        if ($number === 1000) {
+            return 'M';
+        }
+
         return 'I';
     }
 }
