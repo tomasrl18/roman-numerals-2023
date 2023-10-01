@@ -8,9 +8,11 @@ class RomanNumerals
     {
         $romanNumber = "";
 
-        if ($number === 13) return  'XIII';
 
-        if ($number === 10) return 'X';
+        if ($number >= 10) {
+            $romanNumber = 'X';
+            $number -= 10;
+        }
 
         if ($number === 9) return 'IX';
 
