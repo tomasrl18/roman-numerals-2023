@@ -8,6 +8,10 @@ class RomanNumerals
     {
         $roman = "";
 
+        if ($number === 10) {
+            return 'X';
+        }
+
         if ($number >= 5) {
             $roman .= 'V';
             $number -= 5;
@@ -18,10 +22,6 @@ class RomanNumerals
         }
 
         return $roman;
-
-//        if ($number === 10) {
-//            return 'X';
-//        }
 
 //        if ($number === 50) {
 //            return 'L';
