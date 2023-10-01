@@ -18,7 +18,7 @@ class MyClassTest extends TestCase
     }
 
     /** @test */
-    public function given_5_then_return_v(): void
+    public function given_5_then_return_V(): void
     {
         $xxx = new RomanNumerals();
 

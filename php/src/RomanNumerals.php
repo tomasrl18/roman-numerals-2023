@@ -4,8 +4,12 @@ namespace Kata;
 
 class RomanNumerals
 {
-    public function convertRomanNumeral(): string
+    public function convertRomanNumeral(int $number): string
     {
+        if ($number === 5) {
+            return 'V';
+        }
+
         return 'I';
     }
 }
