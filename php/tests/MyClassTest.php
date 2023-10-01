@@ -17,10 +17,6 @@ class MyClassTest extends TestCase
             'given_10_then_return_X' => [10, 'X'],
             'given_12_then_return_XII' => [12, 'XII'],
             'given_18_then_return_XVIII' => [18, 'XVIII']
-//            'given_50_then_return_L' => [50, 'L'],
-//            'given_100_then_return_C' => [100, 'C'],
-//            'given_500_then_return_D' => [500, 'D'],
-//            'given_1000_then_return_M' => [1000, 'M']
         ];
     }
 
