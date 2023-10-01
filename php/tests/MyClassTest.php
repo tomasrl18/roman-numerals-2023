@@ -10,6 +10,7 @@ class MyClassTest extends TestCase
     public function convertion() {
         return [
             'given_1_then_return_I' => [1, 'I'],
+            'given_2_then_return_II' => [2, 'II'],
             'given_5_then_return_V' => [5, 'V'],
             'given_10_then_return_X' => [10, 'X'],
             'given_50_then_return_L' => [50, 'L'],
