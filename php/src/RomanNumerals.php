@@ -8,7 +8,6 @@ class RomanNumerals
     {
         $romanNumber = "";
 
-
         if ($number >= 10) {
             $romanNumber = 'X';
             $number -= 10;
