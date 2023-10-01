@@ -8,22 +8,6 @@ class RomanNumerals
     {
         $romanNumber = "";
 
-        if ($number === 20) return 'XX';
-
-        if ($number >= 10) {
-            $romanNumber = 'X';
-            $number -= 10;
-        }
-
-        if ($number === 9) return $romanNumber . 'IX';
-
-        if ($number >= 5) {
-            $romanNumber .= "V";
-            $number -= 5;
-        }
-
-        if ($number === 4) return $romanNumber . 'IV';
-
         $romanNumber .= $this->concatenateI($number);
 
         return $romanNumber;
@@ -34,6 +18,20 @@ class RomanNumerals
         $romanNumber = "";
 
         for ($i = 0; $i < $number; $i++) {
+            if ($number >= 10 ) {
+                $romanNumber .= 'X';
+                $number -= 10;
+            }
+
+            if ($number === 9) return $romanNumber . 'IX';
+
+            if ($number >= 5) {
+                $romanNumber .= "V";
+                $number -= 5;
+            }
+
+            if ($number === 4) return $romanNumber . 'IV';
+
             $romanNumber .= "I";
         }
 
