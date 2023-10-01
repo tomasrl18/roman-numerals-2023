@@ -17,6 +17,7 @@ class RomanNumbersTest extends TestCase
             'given_6_then_return_VI' => [6, 'VI'],
             'given_8_then_return_VIII' => [8, 'VIII'],
             'given_9_then_return_IX' => [9, 'IX'],
+            'given_10_then_return_X' => [10, 'X'],
         ];
     }
 
