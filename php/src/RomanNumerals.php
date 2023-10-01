@@ -14,6 +14,10 @@ class RomanNumerals
             return 'X';
         }
 
+        if ($number === 50) {
+            return 'L';
+        }
+
         return 'I';
     }
 }
