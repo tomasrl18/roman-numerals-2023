@@ -5,7 +5,7 @@ namespace KataTests;
 use Kata\RomanNumerals;
 use PHPUnit\Framework\TestCase;
 
-class MyClassTest extends TestCase
+class RomanNumbersTest extends TestCase
 {
     public function convertion() {
         return [
@@ -18,11 +18,11 @@ class MyClassTest extends TestCase
     /** @test
      * @dataProvider convertion
      */
-    public function given_a_number_then_return_its_equal_in_roman($number, $expected): void
+    public function given_a_decimal_number_then_return_its_equal_in_roman_number($number, $expected): void
     {
-        $xxx = new RomanNumerals();
+        $romanNumeral = new RomanNumerals();
 
-        $result = $xxx->convertRomanNumeral($number);
+        $result = $romanNumeral->convert($number);
 
         self::assertEquals($expected, $result);
     }
