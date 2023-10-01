@@ -2,9 +2,9 @@
 
 namespace Kata;
 
-class TheClass
+class RomanNumerals
 {
-    public function theMethod(): bool
+    public function convertRomanNumeral(): bool
     {
         return true;
     }
