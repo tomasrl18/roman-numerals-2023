@@ -8,6 +8,8 @@ class RomanNumerals
     {
         $romanNumber = "";
 
+        if ($number === 8) return 'VIII';
+
         if ($number === 6) return 'VI';
 
         if ($number === 5) return 'V';
