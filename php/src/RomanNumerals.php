@@ -22,6 +22,10 @@ class RomanNumerals
             return 'C';
         }
 
+        if ($number === 500) {
+            return 'D';
+        }
+
         return 'I';
     }
 }
