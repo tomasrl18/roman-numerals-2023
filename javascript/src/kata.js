@@ -12,7 +12,7 @@ function nextStep(board) {
         }
     }
     
-    if (neighbours === 1) {
+    if (neighbours === 1 || neighbours === 2) {
         return [
             [0, 0, 0],
             [0, 0, 0],

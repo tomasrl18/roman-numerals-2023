@@ -30,4 +30,22 @@ describe("Game of live", function () {
 
     expect(newBoard).toEqual(expectedBoard);
   });
+
+  it("dies if the cell has only one neighbour", function () {
+    const board = [
+      [0, 0, 0],
+      [0, 1, 1],
+      [0, 0, 0],
+    ];
+
+    let newBoard = nextStep(board);
+
+    const expectedBoard = [
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+    ];
+
+    expect(newBoard).toEqual(expectedBoard);
+  });
 });
